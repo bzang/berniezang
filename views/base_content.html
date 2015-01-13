@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="main">
+  <header>
+    <h1 class="title">Bernie Zang</h1>
+    <nav class="primary-nav">
+      <ul>
+        <li><a href="#about">about</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#blog">blog</a></li>
+        <li><a href="#photos">photos</a></li>
+      </ul>
+    </nav>
+    {% block header %}
+
+    {% endblock %}
+  </header>
+
+  {% block main %}
+  {% endblock %}
+
+  {% block footer %}
+    <footer>
+      <ul>
+        <li>&copy; 2015 Bernie Zang</li>
+      </ul>
+    </footer>
+  {% endblock %}
+</div>
+{% endblock %}
